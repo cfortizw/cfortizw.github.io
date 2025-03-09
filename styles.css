@@ -177,10 +177,10 @@ nav ul li a.active {
 
 /* Footer */
 footer {
-    color: var(--text-light);
+    color: rgba(232, 232, 232, 0.5);
     padding: 15px 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     flex-shrink: 0;
 }
 
@@ -263,7 +263,11 @@ footer {
 
 @media (max-width: 768px) {
     nav ul {
-        gap: 20px;
+        gap: 15px;
+    }
+    
+    nav ul li a {
+        font-size: 0.9rem;
     }
     
     .profile {
@@ -273,6 +277,20 @@ footer {
     
     .headshot {
         margin-bottom: 20px;
+    }
+    
+    .trips .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 0.8rem;
     }
 }
 
@@ -398,10 +416,4 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.85rem;
     font-style: italic;
     margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .trips .container {
-        grid-template-columns: 1fr;
-    }
 }
